@@ -235,8 +235,7 @@ function App() {
         </div>
       </div>
 
-      <button type="button" className="btn btn-secondary mt-3" >select</button>
-
+      
     </div>
   );
 }
