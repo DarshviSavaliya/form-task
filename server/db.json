@@ -1,0 +1,41 @@
+{
+  "city": [
+    {
+      "id": "800c",
+      "city_name": "Vadodara"
+    },
+    {
+      "id": "c045",
+      "city_name": "Surat"
+    },
+    {
+      "id": "310f",
+      "city_name": "test"
+    },
+    {
+      "id": "3771",
+      "city_name": "test123"
+    },
+    {
+      "id": "1c32",
+      "city_name": "Test"
+    },
+    {
+      "id": "3a98",
+      "city_name": "Test1234"
+    },
+    {
+      "id": "5a8a",
+      "city_name": "mumbai"
+    },
+    {
+      "id": "f233",
+      "city_name": "ahmedabad"
+    },
+    {
+      "id": "4719",
+      "city_name": "test345"
+    }
+  ],
+  "users": []
+}
