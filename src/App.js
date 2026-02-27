@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect, useState, useRef } from 'react';
 import axios from "axios";
 
 function App() {
 
-  const API = 'http://localhost:3001';
+  const API = "http://127.0.0.1:3001";
   const [citySubmitData, setCitySubmitData] = useState(null);
   const [userSubmitData, setUserSubmitData] = useState({
     name: "",
@@ -59,11 +59,22 @@ function App() {
     console.log(respData.data)
     setUserList(respData.data)
   }
+  // const fetchCityListData = async () => {
+  //   const respData = await axios.get(`${API}/city`);
+  //   console.log(respData.data)
+  //   setCityList(respData.data)
+  // }
+
   const fetchCityListData = async () => {
+  try {
+    console.log("Calling city API...");
     const respData = await axios.get(`${API}/city`);
-    console.log(respData.data)
-    setCityList(respData.data)
+    console.log("SUCCESS:", respData.data);
+    setCityList(respData.data);
+  } catch (error) {
+    console.log("REAL ERROR:", error.message);
   }
+};
 
   useEffect(() => {
     fetchCityListData();
