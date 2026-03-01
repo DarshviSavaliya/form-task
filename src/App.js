@@ -49,6 +49,16 @@ function App() {
   }
 
   const handleCitySubmit = async () => {
+    if (!citySubmitData || !citySubmitData.city_name) return;
+
+    const exists = cityList.some(
+      (c) => c.city_name.toLowerCase() === citySubmitData.city_name.toLowerCase()
+    );
+    if (exists) {
+      alert("This city has already been added.");
+      return;
+    }
+
     await axios.post(`${API}/city`, citySubmitData);
     setCitySubmitData(null);
     fetchCityListData();
@@ -126,10 +136,10 @@ function App() {
               setUserSubmitData({ ...userSubmitData, city: valueData })
             }}
           >
-            <option value="">Selete City</option>
+            <option value="">Select City</option>
             {cityList && cityList.length > 0 && cityList.map((data)=>{
               return(
-                <option key={data?.id} value={data?.city_name}>{data?.city_name}</option>
+                <option key={data?.id} value={data?.id}>{data?.city_name}</option>
               )
             })}
           </select>
@@ -230,6 +240,7 @@ function App() {
                   <td colSpan={8}>Data Not found!</td>
                 </tr>
               </>}
+
             </tbody>
           </table>
         </div>
