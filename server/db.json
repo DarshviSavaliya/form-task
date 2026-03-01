@@ -9,22 +9,6 @@
       "city_name": "Surat"
     },
     {
-      "id": "310f",
-      "city_name": "test"
-    },
-    {
-      "id": "3771",
-      "city_name": "test123"
-    },
-    {
-      "id": "1c32",
-      "city_name": "Test"
-    },
-    {
-      "id": "3a98",
-      "city_name": "Test1234"
-    },
-    {
       "id": "5a8a",
       "city_name": "mumbai"
     },
@@ -32,41 +16,16 @@
       "id": "f233",
       "city_name": "ahmedabad"
     },
-    {
-      "id": "4719",
-      "city_name": "test345"
-    },
+   
     {
       "id": "8911",
       "city_name": "delhi"
     },
-    {
-      "id": "8cd5",
-      "city_name": "abcd"
-    },
-    {
-      "id": "4bfb",
-      "city_name": "delhi"
-    },
-    {
-      "id": "8032",
-      "city_name": "delhi"
-    },
-    {
-      "id": "f67a",
-      "city_name": "delhi"
-    },
+    
+    
     {
       "id": "77f1",
       "city_name": "rajkot"
-    },
-    {
-      "id": "0d2a",
-      "city_name": "delhi"
-    },
-    {
-      "id": "6e6c",
-      "city_name": "delhi"
     }
   ],
   "users": []
